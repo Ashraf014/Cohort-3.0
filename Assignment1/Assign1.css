@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+   font-family:"Montserrat",sans-serif;
+    background:#f3f3f3;
+
+}
+
+.container {
+  width: 95%;
+  height: 90vh;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  border-radius: 40px;
+  overflow: hidden;
+
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.left {
+  width: 60%;
+  background-color:#ffd100;
+  letter-spacing:4px;
+}
+
+.right {
+  background: #f4f0d9;
+  width: 40%;
+}
+
+.pikachu{
+    width:640px;
+
+    position:absolute;
+
+    top:52%;
+    left:64%;
+
+    transform:translate(-50%,-50%);
+}
+
+.logo{
+    width:180px;
+
+    position:absolute;
+    top:15px;
+    left:45px;
+}
+
+.menu{
+    position:absolute;
+    top:30px;
+    right:40px;
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.dots{
+    position:absolute;
+    right:40px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.dots div{
+    width:12px;
+    height:12px;
+    background:orange;
+    border-radius:50%;
+    margin:15px 0;
+}
+.dots .active{
+      width: 14px;
+    height: 14px;
+    background:#333;
+
+}
+
+.content{
+    position:absolute;
+
+    left:80px;
+    top:220px;
+
+    width:500px;
+}
+.content h4{
+  
+    letter-spacing:12px;
+    font-size:1.4rem;
+    font-weight:600;
+    margin-bottom:20px;
+  ;
+}
+
+.content h1{
+   
+    font-size:7.3rem;
+    font-weight:800;
+    line-height:0.9;
+     margin-bottom:20px;
+}
+
+.content p{
+  width: 420px;
+    font-size:1.25rem;
+    line-height:1.8;
+     margin-bottom:15px;
+    
+}
+
+.counter{
+    
+    font: size 2rem;
+    font-weight:700;
+}
+
+.count-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-top:25px;
+}
+
+.line{
+    width:50px;
+    height:3px;
+    background:black;
+}
+
+.pokeball{
+    position:absolute;
+    left:30px;
+    bottom:-250px;
+    opacity:0.35;
+    font-size:250px;
+}
+.pikachu:hover {
+    transform:translate(-50%,-50%) rotate(15deg);
+    transition:0.2s;
+    cursor:pointer;
+   
+}
+
