@@ -1,0 +1,272 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+     
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+   
+}
+
+
+
+.drinks {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 20px;
+}
+.card:hover {
+    transform: scale(1.05);
+   
+    box-shadow: 0 0 15px rgba(209, 107, 31, 0.2);
+     border: 1px solid #d16b1f;
+}
+
+.card {
+  
+    flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 240px;
+    max-width: 280px;       
+    
+    background-color: #111111;
+    border-radius: 16px;
+    padding: 40px 20px 30px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+     transition: transform 0.3s;
+}
+
+
+.card.active {
+    border-color: #d16b1f;
+    box-shadow: 0 0 15px rgba(209, 107, 31, 0.2);
+}
+
+.tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 1px solid #d16b1f;
+    color: #d16b1f;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tag.new .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #d16b1f;
+    border-radius: 50%;
+}
+
+.image {
+    height: 180px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #888888;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.price {
+    color: #d16b1f;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: auto; 
+
+}
+.special {
+    background-color: #111111;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 50px;
+}
+
+.special-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.special-image-container img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.special-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.special-subtitle {
+    color: #d16b1f;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.special-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.special-text .desc {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.special-text .desc-muted {
+    color: #888888;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.btn-explore {
+    padding: 10px 24px;
+    border: 1px solid #d16b1f;
+    color: #d16b1f;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: rgba(209, 107, 31, 0.1);
+}
+
+
+ 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px;
+    color: #888888;
+    font-size: 0.9rem;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-nav a {
+    color: #888888;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+.footer-nav .dot {
+    color: #d16b1f;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #d16b1f;
+    color: #d16b1f;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #d16b1f;
+    color: #0a0a0a;
+}
+
+
+@media (max-width: 900px) {
+    .special {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .special-text {
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
