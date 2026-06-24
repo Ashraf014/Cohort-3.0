@@ -99,6 +99,11 @@ html,body{
     position:relative;
     z-index:2;
 }
+.center :hover{
+    transform:scale(1.05);
+    transition:0.3s;
+
+}
 
 .right{
     width:32%;
